@@ -1,0 +1,10 @@
+we got a google form and from the challenge description we see some letters are capitalized this letters make the word
+=> "VIEW PREVIEWS RESPONSES"
+
+after some searching i found that u can see responses in a google form by making some changemnt in the url
+
+change viewform to => viewanalytics
+
+and you got the flag
+
+n00bz{7h1s_1s_th3_3nd_0f_g00gl3_f0rm5_fl4g_ch3ck3rs}

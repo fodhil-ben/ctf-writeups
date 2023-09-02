@@ -1,0 +1,19 @@
+in this challenge there is two parts
+part1:
+    we have the secret key on the source code 
+    we decode the session and we find this value using this command
+    ```
+    flask-unsign --decode --cookie 'eyJpbnRlcm5hbCI6ZmFsc2V9.ZPLA6g.KC5AEbkUNbpKjQMU4a5rXiz_PrM'
+    ```
+    than we change the value to True to bypass this
+
+part2:
+    we can see that the app does a screenshot of the requested url 
+    we want to do a screenshot of the internal file that have the flag
+    so normally we would do localhost or 127.0.0.1 but we cant because there is a black list
+    but since it is not a whitelist we ca bypass it easily after some research we find that 
+    localho.t redirects us to localhost
+    we do this 
+    url=http://localho.t:5001/
+    NOTE:
+    we can see that it is running on port 5001 from the source code

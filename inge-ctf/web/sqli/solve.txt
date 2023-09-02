@@ -1,0 +1,16 @@
+we all now sql injection but this is using mongo db which is not a relational database ??
+
+so its no sql injection
+the vulnerability is in this part of code:
+
+```
+const user = await User.findOne(q);
+```
+
+we inject this in the place of the password so it retrives the document when the password is not equal to null which will give us the desired one because 
+nothing is equal to null 
+
+payload:
+
+{"username":"admin","password":{"$ne": null}}
+

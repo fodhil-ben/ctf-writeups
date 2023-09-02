@@ -1,0 +1,10 @@
+after we see the blacklist it seems impossible 
+but after some research i found that python interprets some unicode characters
+so we pass this 
+=>ℱˡᵃᵍ and i got interpreted to this Flag
+
+and we got the flag
+
+#ISICTF{Th0s3_UNIC0D3_C0mplety_Ruin3d_IT_ouxs}
+
+

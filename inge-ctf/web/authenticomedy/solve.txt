@@ -1,0 +1,15 @@
+the vulnerability is in this part of code:
+
+```
+        username = request.form.get('username')
+        password = request.form.get('password')
+        admin = request.form.get('admin', False) == 'True'  
+
+```
+
+it takes the admin value from the form and if no value specified the defailt value is False 
+
+register and add form parameter :
+    username=any&password=any&admin=True
+
+login and get flag

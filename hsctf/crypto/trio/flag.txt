@@ -1,0 +1,18 @@
+1 - we were given a data.txt that is an encrypted message  
+
+2 - in the code we see that the program is generating a new alphabet each letter
+is replaced with a random 3 letters or numbers
+
+3 - i tried to brute force the seed and generate the same alphabet and i failed 
+
+4 - i was going to give up and then an idea came to me since the data.txt contain 
+an encrypted text what if we replace every 3 random letters occurence with 
+a real alphabet letter then we got an encrypted text but with a normal alphabet
+but the alphabet is changed
+
+5 - this reminds me of a well known cipher => substitution cipher
+
+6 - after replacing the random alphabet to a normal alphabet i tried an online 
+solver for substitution cipher i got the flag
+
+=> flag{elephant}

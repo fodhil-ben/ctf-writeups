@@ -1,0 +1,36 @@
+the challenge descrption sais thats it is a broken file that is missing some b
+
+ytes in the beginning 
+
+the first bytes from a file aka magic bytes are missing
+
+i found an article on wikipedia about file signatures
+
+#https://en.wikipedia.org/wiki/List_of_file_signatures
+
+after viewing the hexdump of the file it has this bytes at the beginning
+
+#005a 0400 d6e6 46b4 0002 0121 0016 0000
+
+so i searched on that article about the files that contain this bytes and i go
+
+t this in the file signature 
+
+#FD 37 7A 58 5A 00 => "XZ" it is a data compression file format 
+
+added the first bytes #FD 37 7A 58
+
+at the beginning of the file and when i see the new file format it is an XZ co
+
+mpressed data 
+
+i decompressed it using this command 
+
+# xz -d file.xz
+
+we a got a zip file we unzip it and boom we got flag.txt
+
+#ISICTF{Y0U_r3cOvEr3D_7H3_fILE_4lL_7hAnkS_to_hfz}
+
+
+

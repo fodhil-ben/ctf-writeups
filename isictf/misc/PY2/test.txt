@@ -1,0 +1,10 @@
+so the vulnerability is in the float and how the program handle the the input
+and make the changes to the values of "x" and "z"
+so first we give it "nan" (not a number) this is how it evaluate it
+and x ,z will recieve a nan
+second thing we give it 10000000000000, 10000000000000
+
+1 =>nan, nan
+2 =>10000000000000, 10000000000000
+
+flag =>ISICTF{pyth0n_c4n_b3_r34ly_w31rd_s0m3t1m3s}
